@@ -1,0 +1,19 @@
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Data\bin\Debug\ProtoType.Data.dll.config
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Data\bin\Debug\ProtoType.Data.dll
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Data\bin\Debug\ProtoType.Data.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Data\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Data\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Data\obj\Debug\ProtoType.Data.dll
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Data\obj\Debug\ProtoType.Data.pdb
+G:\ProtoType\ProtoType.Data\bin\Debug\ProtoType.Data.dll.config
+G:\ProtoType\ProtoType.Data\bin\Debug\ProtoType.Data.dll
+G:\ProtoType\ProtoType.Data\bin\Debug\ProtoType.Data.pdb
+G:\ProtoType\ProtoType.Data\bin\Debug\EntityFramework.dll
+G:\ProtoType\ProtoType.Data\bin\Debug\EntityFramework.SqlServer.dll
+G:\ProtoType\ProtoType.Data\bin\Debug\EntityFramework.xml
+G:\ProtoType\ProtoType.Data\bin\Debug\EntityFramework.SqlServer.xml
+G:\ProtoType\ProtoType.Data\obj\Debug\ProtoType.Data.dll
+G:\ProtoType\ProtoType.Data\obj\Debug\ProtoType.Data.pdb
+G:\ProtoType\ProtoType.Data\obj\Debug\ProtoType.Data.csprojResolveAssemblyReference.cache

@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QaaryaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="QaaryaServices" Relationship="Self.FK_ASPNetUsers_tblService" FromRole="AspNetUsers" ToRole="QaaryaService" />
+    <NavigationProperty Name="QaaryaMedias" Relationship="Self.FK_tblUsers_tblMedia" FromRole="AspNetUsers" ToRole="QaaryaMedia" />
+    <NavigationProperty Name="QaaryaProfiles" Relationship="Self.FK_tblUsers_tblProfile" FromRole="AspNetUsers" ToRole="QaaryaProfile" />
+    <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+  </EntityType>
+  <EntityType Name="QaaryaCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryCategoryID" Type="Int64" />
+    <Property Name="CategoryName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CategoryDateCreated" Type="DateTime" Precision="3" />
+    <Property Name="CategoryDateModified" Type="DateTime" Precision="3" />
+    <Property Name="CategoryDateDeleted" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="QaaryaGender">
+    <Key>
+      <PropertyRef Name="GenderID" />
+    </Key>
+    <Property Name="GenderID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GenderDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GenderDateCreated" Type="DateTime" Precision="3" />
+    <Property Name="GenderDateModified" Type="DateTime" Precision="3" />
+    <Property Name="GenderDateDeleted" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="QaaryaMedia">
+    <Key>
+      <PropertyRef Name="MediaID" />
+    </Key>
+    <Property Name="MediaID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MediaProfileID" Type="Int64" />
+    <Property Name="MediaUserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="MediaName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MediaURL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="MediaAlternateName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MediaDateCreated" Type="DateTime" Precision="3" />
+    <Property Name="MediaDateModified" Type="DateTime" Precision="3" />
+    <Property Name="MediaDateDeleted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_tblUsers_tblMedia" FromRole="QaaryaMedia" ToRole="AspNetUsers" />
+    <NavigationProperty Name="QaaryaProfile" Relationship="Self.FK_tblProfile_tblMedia" FromRole="QaaryaMedia" ToRole="QaaryaProfile" />
+  </EntityType>
+  <EntityType Name="QaaryaLocation">
+    <Key>
+      <PropertyRef Name="LocationID" />
+    </Key>
+    <Property Name="LocationID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LocationUserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LocationDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="LocationLabel" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LocationStreetNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LocationStreetName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LocationCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LocationState" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LocationPostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LocationCountry" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LocationLatitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LocationLongitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LocationDateCreated" Type="DateTime" Precision="3" />
+    <Property Name="LocationDateModified" Type="DateTime" Precision="3" />
+    <Property Name="LocationDateDeleted" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="QaaryaProfile">
+    <Key>
+      <PropertyRef Name="ProfileID" />
+    </Key>
+    <Property Name="ProfileID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProfileFirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProfileLastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProfileDateofBirth" Type="DateTime" Precision="3" />
+    <Property Name="ProfileGenderID" Type="Int64" />
+    <Property Name="ProfileAddressLocation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProfileUserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProfileDateCreated" Type="DateTime" Precision="3" />
+    <Property Name="ProfileDateModified" Type="DateTime" Precision="3" />
+    <Property Name="ProfileDateDeleted" Type="DateTime" Precision="3" />
+    <Property Name="ProfileDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_tblUsers_tblProfile" FromRole="QaaryaProfile" ToRole="AspNetUsers" />
+    <NavigationProperty Name="QaaryaMedias" Relationship="Self.FK_tblProfile_tblMedia" FromRole="QaaryaProfile" ToRole="QaaryaMedia" />
+  </EntityType>
+  <EntityType Name="QaaryaRatingReview">
+    <Key>
+      <PropertyRef Name="RatingID" />
+    </Key>
+    <Property Name="RatingID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RatingServiceID" Type="Int64" />
+    <Property Name="RatingHireID" Type="Int64" />
+    <Property Name="RatingClientID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="RatingVendorID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="RatingRateClient" Type="Int32" />
+    <Property Name="RatingRateVendor" Type="Int32" />
+    <Property Name="RatingReviewClient" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="RatingReviewVendor" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="RatingDateCreated" Type="DateTime" Precision="3" />
+    <Property Name="RatingDateModified" Type="DateTime" Precision="3" />
+    <Property Name="RatingDateDeleted" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="QaaryaService">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ServiceDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ServiceRate" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ServicePaymentType" Type="Int32" />
+    <Property Name="ServiceLocationPincode" Type="Int64" />
+    <Property Name="ServiceCategoryID" Type="Int64" />
+    <Property Name="ServiceUserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ServiceDateCreated" Type="DateTime" Precision="3" />
+    <Property Name="ServiceDateModified" Type="DateTime" Precision="3" />
+    <Property Name="ServiceDateDeleted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_ASPNetUsers_tblService" FromRole="QaaryaService" ToRole="AspNetUsers" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ASPNetUsers_tblService">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="QaaryaService" Type="Self.QaaryaService" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="QaaryaService">
+        <PropertyRef Name="ServiceUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUsers_tblMedia">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="QaaryaMedia" Type="Self.QaaryaMedia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="QaaryaMedia">
+        <PropertyRef Name="MediaUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUsers_tblProfile">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="QaaryaProfile" Type="Self.QaaryaProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="QaaryaProfile">
+        <PropertyRef Name="ProfileUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProfile_tblMedia">
+    <End Role="QaaryaProfile" Type="Self.QaaryaProfile" Multiplicity="0..1" />
+    <End Role="QaaryaMedia" Type="Self.QaaryaMedia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QaaryaProfile">
+        <PropertyRef Name="ProfileID" />
+      </Principal>
+      <Dependent Role="QaaryaMedia">
+        <PropertyRef Name="MediaProfileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="*" />
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="QaaryaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUser" />
+    <EntitySet Name="QaaryaCategories" EntityType="Self.QaaryaCategory" />
+    <EntitySet Name="QaaryaGenders" EntityType="Self.QaaryaGender" />
+    <EntitySet Name="QaaryaMedias" EntityType="Self.QaaryaMedia" />
+    <EntitySet Name="QaaryaLocations" EntityType="Self.QaaryaLocation" />
+    <EntitySet Name="QaaryaProfiles" EntityType="Self.QaaryaProfile" />
+    <EntitySet Name="QaaryaRatingReviews" EntityType="Self.QaaryaRatingReview" />
+    <EntitySet Name="QaaryaServices" EntityType="Self.QaaryaService" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ASPNetUsers_tblService" Association="Self.FK_ASPNetUsers_tblService">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="QaaryaService" EntitySet="QaaryaServices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUsers_tblMedia" Association="Self.FK_tblUsers_tblMedia">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="QaaryaMedia" EntitySet="QaaryaMedias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUsers_tblProfile" Association="Self.FK_tblUsers_tblProfile">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="QaaryaProfile" EntitySet="QaaryaProfiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProfile_tblMedia" Association="Self.FK_tblProfile_tblMedia">
+      <End Role="QaaryaProfile" EntitySet="QaaryaProfiles" />
+      <End Role="QaaryaMedia" EntitySet="QaaryaMedias" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="Self.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

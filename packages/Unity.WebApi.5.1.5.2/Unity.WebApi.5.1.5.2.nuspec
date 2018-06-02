@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Unity.WebApi.5.1</id>
+    <version>5.2</version>
+    <title>Unity.WebApi.5.1</title>
+    <authors>dan.diaconu</authors>
+    <owners>dan.diaconu</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is just a Unity.WebApi version that references Microsoft.Practices.Unity 3.5.0.0
+
+Unity.WebAPI is a library that allows the simple Integration of Microsoft's Unity IoC container with ASP.NET Web API.</description>
+    <language>en-029</language>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Unity" version="3.5.1404.0" />
+        <dependency id="Microsoft.AspNet.WebApi.Core" version="5.2.3" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QaaryaModelStoreContainer" CdmEntityContainer="QaaryaEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="QaaryaModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="QaaryaModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="QaaryaModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="QaaryaModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="QaaryaModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QaaryaCategories">
+      <EntityTypeMapping TypeName="QaaryaModel.QaaryaCategory">
+        <MappingFragment StoreEntitySet="QaaryaCategory">
+          <ScalarProperty Name="CategoryDateDeleted" ColumnName="CategoryDateDeleted" />
+          <ScalarProperty Name="CategoryDateModified" ColumnName="CategoryDateModified" />
+          <ScalarProperty Name="CategoryDateCreated" ColumnName="CategoryDateCreated" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryCategoryID" ColumnName="CategoryCategoryID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QaaryaCategoryCollections">
+      <EntityTypeMapping TypeName="QaaryaModel.QaaryaCategoryCollection">
+        <MappingFragment StoreEntitySet="QaaryaCategoryCollection">
+          <ScalarProperty Name="CatetgoryCollectionDateDeleted" ColumnName="CatetgoryCollectionDateDeleted" />
+          <ScalarProperty Name="CategoryCollectionDateModified" ColumnName="CategoryCollectionDateModified" />
+          <ScalarProperty Name="CategoryCollectionDateCreated" ColumnName="CategoryCollectionDateCreated" />
+          <ScalarProperty Name="CategoryCollectionName" ColumnName="CategoryCollectionName" />
+          <ScalarProperty Name="CategoryCollectionValue" ColumnName="CategoryCollectionValue" />
+          <ScalarProperty Name="CategoryCollectionTypeID" ColumnName="CategoryCollectionTypeID" />
+          <ScalarProperty Name="CategoryCollectionID" ColumnName="CategoryCollectionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QaaryaCategoryCollectionTypes">
+      <EntityTypeMapping TypeName="QaaryaModel.QaaryaCategoryCollectionType">
+        <MappingFragment StoreEntitySet="QaaryaCategoryCollectionType">
+          <ScalarProperty Name="CollectionTypeDateDeleted" ColumnName="CollectionTypeDateDeleted" />
+          <ScalarProperty Name="CollectionTypeDateModified" ColumnName="CollectionTypeDateModified" />
+          <ScalarProperty Name="CollectionTypeDateCreated" ColumnName="CollectionTypeDateCreated" />
+          <ScalarProperty Name="CollectionTypeName" ColumnName="CollectionTypeName" />
+          <ScalarProperty Name="CollectionTypeID" ColumnName="CollectionTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QaaryaGenders">
+      <EntityTypeMapping TypeName="QaaryaModel.QaaryaGender">
+        <MappingFragment StoreEntitySet="QaaryaGender">
+          <ScalarProperty Name="GenderDateDeleted" ColumnName="GenderDateDeleted" />
+          <ScalarProperty Name="GenderDateModified" ColumnName="GenderDateModified" />
+          <ScalarProperty Name="GenderDateCreated" ColumnName="GenderDateCreated" />
+          <ScalarProperty Name="GenderDescription" ColumnName="GenderDescription" />
+          <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QaaryaMedias">
+      <EntityTypeMapping TypeName="QaaryaModel.QaaryaMedia">
+        <MappingFragment StoreEntitySet="QaaryaMedia">
+          <ScalarProperty Name="MediaDateDeleted" ColumnName="MediaDateDeleted" />
+          <ScalarProperty Name="MediaDateModified" ColumnName="MediaDateModified" />
+          <ScalarProperty Name="MediaDateCreated" ColumnName="MediaDateCreated" />
+          <ScalarProperty Name="MediaAlternateName" ColumnName="MediaAlternateName" />
+          <ScalarProperty Name="MediaURL" ColumnName="MediaURL" />
+          <ScalarProperty Name="MediaName" ColumnName="MediaName" />
+          <ScalarProperty Name="MediaUserID" ColumnName="MediaUserID" />
+          <ScalarProperty Name="MediaProfileID" ColumnName="MediaProfileID" />
+          <ScalarProperty Name="MediaID" ColumnName="MediaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QaaryaLocations">
+      <EntityTypeMapping TypeName="QaaryaModel.QaaryaLocation">
+        <MappingFragment StoreEntitySet="QaaryaLocation">
+          <ScalarProperty Name="LocationDateDeleted" ColumnName="LocationDateDeleted" />
+          <ScalarProperty Name="LocationDateModified" ColumnName="LocationDateModified" />
+          <ScalarProperty Name="LocationDateCreated" ColumnName="LocationDateCreated" />
+          <ScalarProperty Name="LocationLongitude" ColumnName="LocationLongitude" />
+          <ScalarProperty Name="LocationLatitude" ColumnName="LocationLatitude" />
+          <ScalarProperty Name="LocationCountry" ColumnName="LocationCountry" />
+          <ScalarProperty Name="LocationPostalCode" ColumnName="LocationPostalCode" />
+          <ScalarProperty Name="LocationState" ColumnName="LocationState" />
+          <ScalarProperty Name="LocationCity" ColumnName="LocationCity" />
+          <ScalarProperty Name="LocationStreetName" ColumnName="LocationStreetName" />
+          <ScalarProperty Name="LocationStreetNumber" ColumnName="LocationStreetNumber" />
+          <ScalarProperty Name="LocationLabel" ColumnName="LocationLabel" />
+          <ScalarProperty Name="LocationDescription" ColumnName="LocationDescription" />
+          <ScalarProperty Name="LocationUserID" ColumnName="LocationUserID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QaaryaProfiles">
+      <EntityTypeMapping TypeName="QaaryaModel.QaaryaProfile">
+        <MappingFragment StoreEntitySet="QaaryaProfile">
+          <ScalarProperty Name="ProfileDescription" ColumnName="ProfileDescription" />
+          <ScalarProperty Name="ProfileDateDeleted" ColumnName="ProfileDateDeleted" />
+          <ScalarProperty Name="ProfileDateModified" ColumnName="ProfileDateModified" />
+          <ScalarProperty Name="ProfileDateCreated" ColumnName="ProfileDateCreated" />
+          <ScalarProperty Name="ProfileUserID" ColumnName="ProfileUserID" />
+          <ScalarProperty Name="ProfileAddressLocation" ColumnName="ProfileAddressLocation" />
+          <ScalarProperty Name="ProfileGenderID" ColumnName="ProfileGenderID" />
+          <ScalarProperty Name="ProfileDateofBirth" ColumnName="ProfileDateofBirth" />
+          <ScalarProperty Name="ProfileLastName" ColumnName="ProfileLastName" />
+          <ScalarProperty Name="ProfileFirstName" ColumnName="ProfileFirstName" />
+          <ScalarProperty Name="ProfileID" ColumnName="ProfileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QaaryaJobHirings">
+      <EntityTypeMapping TypeName="QaaryaModel.QaaryaJobHiring">
+        <MappingFragment StoreEntitySet="QaaryaJobHiring">
+          <ScalarProperty Name="JobHireDateDeleted" ColumnName="JobHireDateDeleted" />
+          <ScalarProperty Name="JobHireDateModified" ColumnName="JobHireDateModified" />
+          <ScalarProperty Name="JobHireDateCreated" ColumnName="JobHireDateCreated" />
+          <ScalarProperty Name="JobHireConfirmedByVendor" ColumnName="JobHireConfirmedByVendor" />
+          <ScalarProperty Name="JobHireConfirmedByClient" ColumnName="JobHireConfirmedByClient" />
+          <ScalarProperty Name="JobHireServiceID" ColumnName="JobHireServiceID" />
+          <ScalarProperty Name="JobHireVendorID" ColumnName="JobHireVendorID" />
+          <ScalarProperty Name="JobHireClientID" ColumnName="JobHireClientID" />
+          <ScalarProperty Name="JobHireID" ColumnName="JobHireID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QaaryaRatingReviews">
+      <EntityTypeMapping TypeName="QaaryaModel.QaaryaRatingReview">
+        <MappingFragment StoreEntitySet="QaaryaRatingReviews">
+          <ScalarProperty Name="RatingDateDeleted" ColumnName="RatingDateDeleted" />
+          <ScalarProperty Name="RatingDateModified" ColumnName="RatingDateModified" />
+          <ScalarProperty Name="RatingDateCreated" ColumnName="RatingDateCreated" />
+          <ScalarProperty Name="RatingReviewVendor" ColumnName="RatingReviewVendor" />
+          <ScalarProperty Name="RatingReviewClient" ColumnName="RatingReviewClient" />
+          <ScalarProperty Name="RatingRateVendor" ColumnName="RatingRateVendor" />
+          <ScalarProperty Name="RatingRateClient" ColumnName="RatingRateClient" />
+          <ScalarProperty Name="RatingVendorID" ColumnName="RatingVendorID" />
+          <ScalarProperty Name="RatingClientID" ColumnName="RatingClientID" />
+          <ScalarProperty Name="RatingHireID" ColumnName="RatingHireID" />
+          <ScalarProperty Name="RatingServiceID" ColumnName="RatingServiceID" />
+          <ScalarProperty Name="RatingID" ColumnName="RatingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QaaryaServices">
+      <EntityTypeMapping TypeName="QaaryaModel.QaaryaService">
+        <MappingFragment StoreEntitySet="QaaryaService">
+          <ScalarProperty Name="ServiceDateDeleted" ColumnName="ServiceDateDeleted" />
+          <ScalarProperty Name="ServiceDateModified" ColumnName="ServiceDateModified" />
+          <ScalarProperty Name="ServiceDateCreated" ColumnName="ServiceDateCreated" />
+          <ScalarProperty Name="ServiceUserID" ColumnName="ServiceUserID" />
+          <ScalarProperty Name="ServiceExperienceLevelID" ColumnName="ServiceExperienceLevelID" />
+          <ScalarProperty Name="ServiceSubCategoryID" ColumnName="ServiceSubCategoryID" />
+          <ScalarProperty Name="ServiceCategoryID" ColumnName="ServiceCategoryID" />
+          <ScalarProperty Name="ServiceAreaRangeID" ColumnName="ServiceAreaRangeID" />
+          <ScalarProperty Name="ServiceLocationLatitude" ColumnName="ServiceLocationLatitude" />
+          <ScalarProperty Name="ServiceLocationLongitude" ColumnName="ServiceLocationLongitude" />
+          <ScalarProperty Name="ServicePaymentTypeID" ColumnName="ServicePaymentTypeID" />
+          <ScalarProperty Name="ServiceRate" ColumnName="ServiceRate" />
+          <ScalarProperty Name="ServiceDescription" ColumnName="ServiceDescription" />
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="database_firewall_rules">
+      <EntityTypeMapping TypeName="QaaryaModel.database_firewall_rules">
+        <MappingFragment StoreEntitySet="database_firewall_rules">
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="end_ip_address" ColumnName="end_ip_address" />
+          <ScalarProperty Name="start_ip_address" ColumnName="start_ip_address" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="QaaryaModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetUser">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="AspNetRole">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

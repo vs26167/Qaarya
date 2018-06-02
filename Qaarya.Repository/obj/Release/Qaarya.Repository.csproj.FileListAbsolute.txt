@@ -1,0 +1,12 @@
+E:\Product\ProtoType\ProtoType.Repository\bin\Release\ProtoType.Repository.dll.config
+E:\Product\ProtoType\ProtoType.Repository\bin\Release\ProtoType.Repository.dll
+E:\Product\ProtoType\ProtoType.Repository\bin\Release\ProtoType.Repository.pdb
+E:\Product\ProtoType\ProtoType.Repository\bin\Release\EntityFramework.dll
+E:\Product\ProtoType\ProtoType.Repository\bin\Release\EntityFramework.SqlServer.dll
+E:\Product\ProtoType\ProtoType.Repository\bin\Release\ProtoType.Data.dll
+E:\Product\ProtoType\ProtoType.Repository\bin\Release\ProtoType.Data.pdb
+E:\Product\ProtoType\ProtoType.Repository\bin\Release\EntityFramework.xml
+E:\Product\ProtoType\ProtoType.Repository\bin\Release\EntityFramework.SqlServer.xml
+E:\Product\ProtoType\ProtoType.Repository\obj\Release\Qaarya.Repository.csprojResolveAssemblyReference.cache
+E:\Product\ProtoType\ProtoType.Repository\obj\Release\ProtoType.Repository.dll
+E:\Product\ProtoType\ProtoType.Repository\obj\Release\ProtoType.Repository.pdb

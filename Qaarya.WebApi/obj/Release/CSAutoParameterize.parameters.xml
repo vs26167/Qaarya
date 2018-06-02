@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=vdt3haazol.database.windows.net,1433; Initial Catalog=Qaarya; User ID=qaarya; Password=Bhardwaj@123; Connect Timeout=60;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Product\\ProtoType\\ProtoType\.WebApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="QaaryaEntities-Web.config Connection String" description="QaaryaEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/DataModel.QaaryaDataModel.csdl|res://*/DataModel.QaaryaDataModel.ssdl|res://*/DataModel.QaaryaDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=vdt3haazol.database.windows.net,1433;initial catalog=Qaarya;persist security info=True;user id=qaarya;password=Bhardwaj@123;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Product\\ProtoType\\ProtoType\.WebApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='QaaryaEntities']/@connectionString" />
+  </parameter>
+</parameters>

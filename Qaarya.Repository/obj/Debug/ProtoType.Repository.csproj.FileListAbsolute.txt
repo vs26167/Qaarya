@@ -1,0 +1,24 @@
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\bin\Debug\ProtoType.Repository.dll.config
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\bin\Debug\ProtoType.Repository.dll
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\bin\Debug\ProtoType.Repository.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\bin\Debug\ProtoType.Data.dll
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\bin\Debug\ProtoType.Data.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\obj\Debug\ProtoType.Repository.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\obj\Debug\ProtoType.Repository.dll
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\ProtoType\ProtoType.Repository\obj\Debug\ProtoType.Repository.pdb
+G:\ProtoType\ProtoType.Repository\bin\Debug\ProtoType.Repository.dll
+G:\ProtoType\ProtoType.Repository\bin\Debug\ProtoType.Repository.dll.config
+G:\ProtoType\ProtoType.Repository\bin\Debug\EntityFramework.dll
+G:\ProtoType\ProtoType.Repository\bin\Debug\EntityFramework.SqlServer.dll
+G:\ProtoType\ProtoType.Repository\bin\Debug\ProtoType.Data.dll
+G:\ProtoType\ProtoType.Repository\bin\Debug\ProtoType.Data.pdb
+G:\ProtoType\ProtoType.Repository\bin\Debug\EntityFramework.xml
+G:\ProtoType\ProtoType.Repository\bin\Debug\EntityFramework.SqlServer.xml
+G:\ProtoType\ProtoType.Repository\obj\Debug\ProtoType.Repository.csprojResolveAssemblyReference.cache
+G:\ProtoType\ProtoType.Repository\obj\Debug\ProtoType.Repository.dll
+G:\ProtoType\ProtoType.Repository\obj\Debug\ProtoType.Repository.pdb
+G:\ProtoType\ProtoType.Repository\bin\Debug\ProtoType.Repository.pdb
